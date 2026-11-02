@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172a23">
+  <meta name="description" content="Un déjeuner confidentiel, un dîner de famille ou une réception professionnelle chez Motif.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Réceptions privées — Motif">
+  <meta property="og:description" content="Un déjeuner confidentiel, un dîner de famille ou une réception professionnelle chez Motif.">
+  <title>Réceptions privées — Motif, maison de cuisine</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="direction.css">
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="inner-page private-page">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="container nav-row">
+    <a class="brand" href="index.html" aria-label="Motif, accueil"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="primary-nav" id="main-nav" aria-label="Navigation principale"><a href="menus.html">Les menus</a><a href="maison.html">La maison</a><a href="privatiser.html" aria-current="page">Réceptions</a><a class="nav-book" href="reservation.html">Réserver <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="contenu">
+    <section class="inner-hero private-hero"><div class="container inner-hero-grid"><div><p class="eyebrow"><span class="fine-rule"></span> UNE TABLE À PART</p><h1>Le moment<br>à votre <em>mesure.</em></h1><p>Un déjeuner de famille, une célébration ou un dîner professionnel : la maison imagine avec vous une réception à taille humaine.</p><a class="button button-metal" href="#demande-privee">Parlons de votre projet <span aria-hidden="true">↓</span></a></div><figure><img src="assets/salon-nacre.webp" alt="Un salon de restaurant préparé pour recevoir un petit groupe" fetchpriority="high"><figcaption>UN LIEU D’INSPIRATION À PERSONNALISER</figcaption></figure></div></section>
+    <section class="section private-story"><div class="container private-story-grid"><div><div class="section-index"><span>01</span><span>VOTRE RÉCEPTION</span></div><h2>Une attention<br>pour <em>chacun.</em></h2></div><div class="private-story-copy"><p class="story-lead">À Motif, une réception commence par une conversation.</p><p>Nous échangeons sur l’occasion, le nombre de convives, le rythme souhaité et les contraintes alimentaires, puis préparons une proposition à partir du menu de saison.</p><p>Un repas privé intimiste ou la mise à disposition complète du lieu dépend des dates, du nombre de personnes et de la configuration réelle. L’équipe vous répondra avec les possibilités concrètes.</p></div></div><div class="container private-photo-row"><figure><img src="assets/mise-en-place.webp" alt="Une table mise en place pour un dîner privé" loading="lazy"><figcaption>LE SOIN DE LA TABLE, DU PREMIER AU DERNIER GESTE</figcaption></figure><div class="private-caption"><span class="image-aside-mark">M.</span><p>Le menu, les accords et le déroulé se dessinent avec vous, selon le moment à célébrer.</p><a class="under-link" href="menus.html">Découvrir les menus <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="private-process"><div class="container"><div class="section-index section-index-light"><span>02</span><span>DE L’IDÉE À LA TABLE</span></div><div class="rhythm-heading"><h2>Simplement,<br>en <em>trois temps.</em></h2><p>Chaque réception se construit autour de vos invités. La demande sert de point de départ, et l’équipe affine ensuite les détails avec vous.</p></div><div class="rhythm-steps"><article><span>I</span><h3>Raconter</h3><p>Partagez l’occasion, vos envies, la date et le nombre de convives.</p></article><article><span>II</span><h3>Imaginer</h3><p>La maison revient vers vous pour préciser le menu, le lieu et le budget.</p></article><article><span>III</span><h3>Accueillir</h3><p>Une fois les modalités confirmées ensemble, le moment prend forme.</p></article></div></div></section>
+    <section class="private-form-section" id="demande-privee"><div class="container private-form-layout"><div class="private-form-intro"><div class="section-index"><span>03</span><span>PREMIER ÉCHANGE</span></div><p class="eyebrow"><span class="fine-rule"></span> DÉCRIVEZ-NOUS VOTRE PROJET</p><h2>Et si l’on<br>commençait <em>ici ?</em></h2><p>Quelques indications suffisent. Nous reprendrons contact pour imaginer les détails ensemble.</p><div class="form-contact-note"><span>PARLONS-EN</span><a data-email-link href="mailto:bonjour@motif.example">bonjour@motif.example</a><a data-phone-link href="tel:+33500000000" data-phone>05 00 00 00 00</a></div></div>
+        <form class="private-form" id="private-form" data-private-form>
+          <input type="text" name="website" class="bot-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field-grid">
+          <label class="field"><span>Votre nom</span><input type="text" name="name" autocomplete="name" required placeholder="Prénom et nom"></label>
+          <label class="field"><span>Votre e-mail</span><input type="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr"></label>
+          <label class="field"><span>Type de moment</span><select name="occasion" required><option value="" disabled selected>Choisir une occasion</option><option>Repas de famille</option><option>Anniversaire ou célébration</option><option>Réception professionnelle</option><option>Autre occasion</option></select></label>
+          <label class="field"><span>Nombre de convives</span><select name="guests" required><option value="" disabled selected>À préciser</option><option>2 à 6 personnes</option><option>7 à 12 personnes</option><option>13 à 20 personnes</option><option>Plus de 20 personnes</option></select></label>
+          <label class="field"><span>Date envisagée <small>(facultatif)</small></span><input type="date" name="date" id="private-date"></label>
+          <label class="field"><span>Budget par personne <small>(facultatif)</small></span><select name="budget"><option value="">À discuter</option><option>Moins de 100 €</option><option>100 à 150 €</option><option>150 à 200 €</option><option>Plus de 200 €</option></select></label>
+          <label class="field field-wide"><span>Quelques mots sur votre projet</span><textarea name="message" rows="4" placeholder="Occasion, souhaits, contraintes alimentaires…"></textarea></label>
+        </div>
+        <label class="consent-check"><input type="checkbox" name="privacy" required><span>J’accepte que ces informations soient utilisées pour traiter ma demande et me répondre.</span></label>
+          <button class="button button-metal" type="submit">Envoyer ma demande <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" data-private-feedback aria-live="polite">Un membre de l’équipe vous répondra après avoir étudié votre projet.</p>
+      </form>
+    </div></section>
+    <section class="reserve-cta"><div class="container reserve-cta-inner"><p>Une table pour le quotidien aussi.</p><a class="button button-metal" href="reservation.html">Réserver pour dîner <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-top"><div class="footer-signature"><a class="brand brand-footer" href="index.html"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a><p>Une cuisine de saison.<br>Un souvenir qui demeure.</p></div><div class="footer-block"><span class="footer-label">LA MAISON</span><address><span data-address>8 passage des Carmes</span><br><span data-city-line>33000 Bordeaux</span></address><a class="footer-arrow" data-map-link href="https://maps.google.com/?q=Bordeaux" target="_blank" rel="noreferrer">Nous trouver <span aria-hidden="true">↗</span></a></div><div class="footer-block"><span class="footer-label">LES SERVICES</span><p><span data-opening-days>Du mardi au samedi</span><br>Déjeuner · <span data-lunch-hours>12h15 — 13h30</span><br>Dîner · <span data-dinner-hours>19h15 — 20h30</span></p><a class="footer-arrow" href="menus.html">Voir les menus <span aria-hidden="true">↗</span></a></div><div class="footer-block"><span class="footer-label">ÉCRIVEZ-NOUS</span><a class="footer-contact" data-phone-link href="tel:+33500000000" data-phone>05 00 00 00 00</a><a class="footer-contact" data-email-link href="mailto:bonjour@motif.example">bonjour@motif.example</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> <span data-brand>Motif</span></span><span>La table se raconte au présent.</span><div><a href="mentions-legales.html">Mentions légales</a><span>·</span><a href="mentions-legales.html#confidentialite">Confidentialité</a></div></div></footer>
+  <a class="mobile-reserve" href="reservation.html">Réserver une table <span aria-hidden="true">↗</span></a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20171b">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Espace de gestion — Motif</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="direction.css">
+  <script src="config.js"></script>
+  <script src="admin.js" defer></script>
+</head>
+<body class="inner-page admin-page">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html" aria-label="Motif, accueil"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a>
+      <nav class="admin-header-nav" aria-label="Navigation de l’espace"><a href="index.html">Retour au site <span aria-hidden="true">↗</span></a></nav>
+      <button class="button button-outline-light admin-logout" type="button" data-admin-logout hidden>Se déconnecter</button>
+    </div>
+  </header>
+  <main id="contenu" class="admin-main">
+    <section class="admin-login" data-admin-login-view aria-labelledby="admin-login-title">
+      <p class="eyebrow"><span class="fine-rule"></span> ESPACE PRIVÉ</p>
+      <h1 id="admin-login-title">Gestion<br><em>de la maison.</em></h1>
+      <p class="admin-lead">Connectez-vous pour consulter les demandes de table et de réception.</p>
+      <form class="admin-login-form" data-admin-login>
+        <label class="admin-field"><span>Identifiant</span><input name="username" autocomplete="username" required value="admin"></label>
+        <label class="admin-field"><span>Mot de passe</span><input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button button-metal" type="submit">Ouvrir l’espace <span aria-hidden="true">→</span></button>
+        <p class="admin-feedback" data-admin-login-feedback aria-live="polite"></p>
+      </form>
+      <p class="admin-local-note">Les demandes sont conservées sur le serveur du site. Cet espace n’est pas un lien public de navigation.</p>
+    </section>
+    <section class="admin-dashboard" data-admin-dashboard hidden aria-labelledby="admin-dashboard-title">
+      <div class="admin-dashboard-head">
+        <div><p class="eyebrow"><span class="fine-rule"></span> TABLEAU DE BORD</p><h1 id="admin-dashboard-title">Les demandes</h1><p data-admin-email-state class="admin-email-state"></p></div>
+        <button class="button button-outline" type="button" data-admin-refresh>Actualiser <span aria-hidden="true">↻</span></button>
+      </div>
+      <div class="admin-tabs" role="tablist" aria-label="Type de demande">
+        <button type="button" role="tab" aria-selected="true" data-admin-tab="reservation">Tables <span data-admin-count="reservation">0</span></button>
+        <button type="button" role="tab" aria-selected="false" data-admin-tab="private">Réceptions <span data-admin-count="private">0</span></button>
+      </div>
+      <p class="admin-feedback" data-admin-feedback aria-live="polite"></p>
+      <div class="admin-request-list" data-admin-list aria-live="polite"></div>
+      <div class="admin-empty" data-admin-empty hidden><span aria-hidden="true">✳</span><h2>Aucune demande pour le moment</h2><p>Les nouvelles demandes apparaîtront ici après leur envoi.</p></div>
+      <p class="admin-retention-note">Les demandes sont automatiquement supprimées après <strong data-admin-retention-days>90</strong> jours.</p>
+    </section>
+  </main>
+  <footer class="site-footer admin-footer"><div class="container footer-bottom"><span>© <span data-year></span> <span data-brand>Motif</span></span><a href="index.html">Retour au site</a></div></footer>
+</body>
+</html>

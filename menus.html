@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#172a23">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="description" content="Les menus dégustation de Motif : trois parcours de saison, leurs accords et les informations pratiques.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Les menus — Motif">
+    <meta property="og:description" content="Les menus dégustation de Motif : trois parcours de saison, leurs accords et les informations pratiques."><title>Les menus — Motif, maison de cuisine</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="direction.css">
+    <script src="config.js">
+    </script>
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body class="inner-page"><a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="container nav-row"><a class="brand" href="index.html" aria-label="Motif, accueil"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="main-nav" aria-label="Navigation principale"><a href="menus.html" aria-current="page">Les menus</a><a href="maison.html">La maison</a><a href="privatiser.html">Réceptions</a><a class="nav-book" href="reservation.html">Réserver <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenu">
+      <section class="inner-hero menu-hero">
+        <div class="container inner-hero-grid">
+          <div>
+            <p class="eyebrow"><span class="fine-rule"></span> LA CARTE DE SAISON <span class="hero-dot">·</span> <span data-city>Bordeaux</span>
+            </p>
+            <h1>Des menus<br>à <em>habiter.</em>
+            </h1>
+            <p>Trois parcours, une cuisine au présent. Choisissez le temps que vous souhaitez accorder à la table.
+            </p>
+            <a class="button button-metal" href="reservation.html">Réserver une expérience <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure><img src="assets/assiette-signee.webp" alt="Une assiette gastronomique dressée avec soin" fetchpriority="high">
+            <figcaption>LA CARTE ÉVOLUE SELON LA SAISON
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="section menus-detail-section">
+        <div class="container">
+          <div class="section-index"><span>01</span><span>LES PARCOURS</span>
+          </div>
+          <div class="menu-intro">
+            <h2>Trois façons<br>de <em>découvrir.</em>
+            </h2>
+            <p>Les menus sont servis à l’ensemble de la table. Les plats et les tarifs ci-dessous sont des exemples de démonstration, à remplacer par la carte réelle de la maison.
+            </p>
+          </div>
+          <div class="menu-tabs" role="tablist" aria-label="Choisir un menu dégustation">
+            <button class="menu-tab is-active" id="tab-instant" type="button" role="tab" aria-selected="true" aria-controls="panel-instant" data-menu-tab="instant"><span>I</span><strong>L’Instant</strong><small>5 temps</small>
+            </button>
+            <button class="menu-tab" id="tab-traverse" type="button" role="tab" aria-selected="false" aria-controls="panel-traverse" data-menu-tab="traverse" tabindex="-1"><span>II</span><strong>La Traversée</strong><small>7 temps</small>
+            </button>
+            <button class="menu-tab" id="tab-motif" type="button" role="tab" aria-selected="false" aria-controls="panel-motif" data-menu-tab="motif" tabindex="-1"><span>III</span><strong>Le Motif</strong><small>9 temps</small>
+            </button>
+          </div>
+          <section class="menu-panel is-active" id="panel-instant" role="tabpanel" aria-labelledby="tab-instant" data-menu-panel="instant" tabindex="0">
+            <div class="menu-panel-header">
+              <div><span class="eyebrow">L’INSTANT · 5 TEMPS</span>
+                <h3>Une première rencontre.
+                </h3>
+              </div>
+              <div class="menu-price"><strong>98 €</strong><span>par personne</span>
+              </div>
+            </div>
+            <p class="menu-panel-lead">Un parcours court et complet, construit autour du produit du jour.
+            </p>
+            <div class="course-list">
+              <article><span>01</span>
+                <div>
+                  <h4>La première note
+                  </h4>
+                  <p>Une mise en bouche, à la lumière de la saison.
+                  </p>
+                </div>
+              </article>
+              <article><span>02</span>
+                <div>
+                  <h4>Le jardin
+                  </h4>
+                  <p>Végétal tendre, condiment vif et bouillon clair.
+                  </p>
+                </div>
+              </article>
+              <article><span>03</span>
+                <div>
+                  <h4>La mer ou la rivière
+                  </h4>
+                  <p>Cuisson douce, herbes fraîches et jus court.
+                  </p>
+                </div>
+              </article>
+              <article><span>04</span>
+                <div>
+                  <h4>Le feu
+                  </h4>
+                  <p>Une pièce de saison, fumet profond, texture délicate.
+                  </p>
+                </div>
+              </article>
+              <article><span>05</span>
+                <div>
+                  <h4>La dernière douceur
+                  </h4>
+                  <p>Fruit, infusion et souvenir d’enfance.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <a class="button button-metal" href="reservation.html?menu=instant">Choisir L’Instant <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="menu-panel" id="panel-traverse" role="tabpanel" aria-labelledby="tab-traverse" data-menu-panel="traverse" tabindex="0" hidden>
+            <div class="menu-panel-header">
+              <div><span class="eyebrow">LA TRAVERSÉE · 7 TEMPS</span>
+                <h3>Suivre le fil plus loin.
+                </h3>
+              </div>
+              <div class="menu-price"><strong>145 €</strong><span>par personne</span>
+              </div>
+            </div>
+            <p class="menu-panel-lead">Un voyage en sept étapes, pour laisser la cuisine déployer toutes ses nuances.
+            </p>
+            <div class="course-list">
+              <article><span>01</span>
+                <div>
+                  <h4>Les prémices
+                  </h4>
+                  <p>Deux bouchées, un accord d’herbes et d’agrumes.
+                  </p>
+                </div>
+              </article>
+              <article><span>02</span>
+                <div>
+                  <h4>Le jardin
+                  </h4>
+                  <p>Le végétal dans sa saison, ses feuilles et ses racines.
+                  </p>
+                </div>
+              </article>
+              <article><span>03</span>
+                <div>
+                  <h4>La coquille
+                  </h4>
+                  <p>Une chair nacrée, un jus de marée et un trait d’acidité.
+                  </p>
+                </div>
+              </article>
+              <article><span>04</span>
+                <div>
+                  <h4>Le pain chaud
+                  </h4>
+                  <p>Levain maison et beurre de baratte.
+                  </p>
+                </div>
+              </article>
+              <article><span>05</span>
+                <div>
+                  <h4>La terre
+                  </h4>
+                  <p>Une cuisson lente, un jus lié et un condiment frais.
+                  </p>
+                </div>
+              </article>
+              <article><span>06</span>
+                <div>
+                  <h4>Le prélude sucré
+                  </h4>
+                  <p>Fruit rôti, lait fermenté et feuille parfumée.
+                  </p>
+                </div>
+              </article>
+              <article><span>07</span>
+                <div>
+                  <h4>Le grand dessert
+                  </h4>
+                  <p>Une composition à partager en dernier regard.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <a class="button button-metal" href="reservation.html?menu=traverse">Choisir La Traversée <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="menu-panel" id="panel-motif" role="tabpanel" aria-labelledby="tab-motif" data-menu-panel="motif" tabindex="0" hidden>
+            <div class="menu-panel-header">
+              <div><span class="eyebrow">PARTITION MOTIF · 9 TEMPS</span>
+                <h3>La cuisine en pleine mesure.
+                </h3>
+              </div>
+              <div class="menu-price"><strong>185 €</strong><span>par personne</span>
+              </div>
+            </div>
+            <p class="menu-panel-lead">Neuf temps de dégustation, conçus pour s’abandonner au rythme de la maison.
+            </p>
+            <div class="course-list">
+              <article><span>01</span>
+                <div>
+                  <h4>Ouverture
+                  </h4>
+                  <p>Le premier geste, vif et salin.
+                  </p>
+                </div>
+              </article>
+              <article><span>02</span>
+                <div>
+                  <h4>Le jardin cru
+                  </h4>
+                  <p>Feuilles, fleurs et fraîcheur de saison.
+                  </p>
+                </div>
+              </article>
+              <article><span>03</span>
+                <div>
+                  <h4>La coquille
+                  </h4>
+                  <p>Une chair nacrée et son jus clair.
+                  </p>
+                </div>
+              </article>
+              <article><span>04</span>
+                <div>
+                  <h4>Le pain chaud
+                  </h4>
+                  <p>Levain maison et beurre de baratte.
+                  </p>
+                </div>
+              </article>
+              <article><span>05</span>
+                <div>
+                  <h4>La marée
+                  </h4>
+                  <p>Poisson du jour, cuisson juste, herbes salines.
+                  </p>
+                </div>
+              </article>
+              <article><span>06</span>
+                <div>
+                  <h4>Le passage
+                  </h4>
+                  <p>Un bouillon à boire, parfum de sous-bois.
+                  </p>
+                </div>
+              </article>
+              <article><span>07</span>
+                <div>
+                  <h4>Le feu
+                  </h4>
+                  <p>Une pièce de saison, fumet profond.
+                  </p>
+                </div>
+              </article>
+              <article><span>08</span>
+                <div>
+                  <h4>Avant le sucre
+                  </h4>
+                  <p>Une fraîcheur de fruit et de feuille.
+                  </p>
+                </div>
+              </article>
+              <article><span>09</span>
+                <div>
+                  <h4>Le grand dessert
+                  </h4>
+                  <p>La dernière page, à partager.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <a class="button button-metal" href="reservation.html?menu=motif">Choisir Le Motif <span aria-hidden="true">↗</span></a>
+          </section>
+          <p class="menu-note"><span aria-hidden="true">✳</span>Allergies, intolérances ou régime particulier : signalez-les dès votre demande. L’équipe vous répondra pour confirmer ce qui est possible.
+          </p>
+        </div>
+      </section>
+      <section class="section pairings-section" id="accords">
+        <div class="container pairings-grid">
+          <figure><img src="assets/mise-en-place.webp" alt="Verres et couverts disposés pour une dégustation" loading="lazy">
+            <figcaption>ACCORDS À LA CARTE
+            </figcaption>
+          </figure>
+          <div>
+            <div class="section-index"><span>02</span><span>LES ACCORDS</span>
+            </div>
+            <p class="eyebrow"><span class="fine-rule"></span>EN DIALOGUE AVEC LE MENU
+            </p>
+            <h2>La justesse<br>du <em>contrepoint.</em>
+            </h2>
+            <p class="pairings-copy">Pour chaque parcours, deux propositions prolongent les assiettes sans en détourner l’attention.
+            </p>
+            <div class="pairing-row"><span data-pairing-label="wine">Accord de vins · 4 verres</span><strong data-pairing-price="wine">68 €</strong>
+            </div>
+            <div class="pairing-row"><span data-pairing-label="alcoholFree">Accord sans alcool · 4 verres</span><strong data-pairing-price="alcoholFree">48 €</strong>
+            </div>
+            <p class="small-note">Ces tarifs et exemples sont fictifs. La sélection réelle est présentée par la maison.
+            </p>
+            <a class="under-link" href="reservation.html">Ajouter un accord à ma demande <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="container faq-layout">
+          <div>
+            <div class="section-index"><span>03</span><span>AVANT DE VENIR</span>
+            </div>
+            <h2>Quelques<br><em>repères.</em>
+            </h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Combien de temps prévoir ?
+              </summary>
+              <p>Comptez environ deux heures pour L’Instant, deux heures trente pour La Traversée et trois heures pour Le Motif. Ce sont des indications de démonstration à ajuster selon le service réel.
+              </p>
+            </details>
+            <details>
+              <summary>Les menus peuvent-ils être adaptés ?
+              </summary>
+              <p>Signalez toute allergie, intolérance ou préférence lors de votre demande. La maison vous répondra pour confirmer les adaptations possibles.
+              </p>
+            </details>
+            <details>
+              <summary>Les boissons sont-elles incluses ?
+              </summary>
+              <p>Les menus sont proposés hors boissons. Des accords avec ou sans alcool peuvent accompagner chaque parcours.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="reserve-cta">
+        <div class="container reserve-cta-inner">
+          <p>Le prochain chapitre se passe à table.
+          </p>
+          <a class="button button-metal" href="reservation.html">Choisir sa date <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-signature"><a class="brand brand-footer" href="index.html"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a>
+          <p>Une cuisine de saison.<br>Un souvenir qui demeure.
+          </p>
+        </div>
+        <div class="footer-block"><span class="footer-label">LA MAISON</span>
+          <address><span data-address>8 passage des Carmes</span><br><span data-city-line>33000 Bordeaux</span>
+          </address>
+          <a class="footer-arrow" data-map-link href="https://maps.google.com/?q=Bordeaux" target="_blank" rel="noreferrer">Nous trouver <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="footer-block"><span class="footer-label">LES SERVICES</span>
+          <p><span data-opening-days>Du mardi au samedi</span><br>Déjeuner · <span data-lunch-hours>12h15 — 13h30</span><br>Dîner · <span data-dinner-hours>19h15 — 20h30</span>
+          </p>
+          <a class="footer-arrow" href="reservation.html">Choisir un moment <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="footer-block"><span class="footer-label">ÉCRIVEZ-NOUS</span><a class="footer-contact" data-phone-link href="tel:+33500000000" data-phone>05 00 00 00 00</a><a class="footer-contact" data-email-link href="mailto:bonjour@motif.example">bonjour@motif.example</a>
+        </div>
+      </div>
+      <div class="container footer-bottom"><span>© <span data-year></span> <span data-brand>Motif</span></span><span>La table se raconte au présent.</span>
+        <div><a href="mentions-legales.html">Mentions légales</a><span>·</span><a href="mentions-legales.html#confidentialite">Confidentialité</a>
+        </div>
+      </div>
+    </footer>
+    <a class="mobile-reserve" href="reservation.html">Réserver une table <span aria-hidden="true">↗</span></a>
+  </body>
+</html>

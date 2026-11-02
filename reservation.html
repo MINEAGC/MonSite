@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172a23">
+  <meta name="description" content="Préparez votre demande de table chez Motif, maison de cuisine à Bordeaux.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Réserver une table — Motif">
+  <meta property="og:description" content="Préparez votre demande de table chez Motif, maison de cuisine à Bordeaux.">
+  <title>Réserver une table — Motif, maison de cuisine</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="direction.css">
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="inner-page reservation-page">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header"><div class="container nav-row">
+    <a class="brand" href="index.html" aria-label="Motif, accueil"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="primary-nav" id="main-nav" aria-label="Navigation principale"><a href="menus.html">Les menus</a><a href="maison.html">La maison</a><a href="privatiser.html">Réceptions</a><a class="nav-book" href="reservation.html" aria-current="page">Réserver <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="contenu">
+    <section class="reservation-hero" aria-labelledby="reservation-title">
+      <div class="container reservation-hero-grid">
+        <div class="reservation-intro">
+          <p class="eyebrow eyebrow-light"><span class="fine-rule"></span> MAISON MOTIF · <span data-city-compact>BORDEAUX</span></p>
+          <h1 id="reservation-title">À votre table,<br><em>à votre rythme.</em></h1>
+          <p>Choisissez votre date, votre menu et le nombre de convives. Notre équipe vous répondra pour confirmer la disponibilité.</p>
+          <div class="reservation-hours" aria-label="Horaires des services">
+            <div><span class="hours-mark" aria-hidden="true">12</span><span><strong>Déjeuner</strong><small data-lunch-hours>12h15 — 13h30</small></span></div>
+            <div><span class="hours-mark" aria-hidden="true">19</span><span><strong>Dîner</strong><small data-dinner-hours>19h15 — 20h30</small></span></div>
+          </div>
+          <a class="reservation-anchor" href="#demande">Commencer ma demande <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="reservation-hero-photo">
+          <img src="assets/salle-ecrin.webp" alt="La salle de la maison, éclairée pour le dîner" fetchpriority="high">
+          <figcaption><span>LA MAISON</span><span data-city>Bordeaux</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="booking-section" id="demande" aria-labelledby="booking-title">
+      <div class="container booking-layout">
+        <div class="booking-main">
+          <div class="booking-heading">
+            <div><p class="eyebrow"><span class="fine-rule"></span> DEMANDE DE TABLE</p><h2 id="booking-title">Préparons votre venue</h2></div>
+            <span class="booking-duration">ENV. 2 MIN</span>
+          </div>
+          <ol class="booking-progress" aria-label="Étapes de la demande">
+            <li class="progress-step is-current" data-progress="1" aria-current="step"><span>01</span><strong>Votre moment</strong></li>
+            <li class="progress-connector" aria-hidden="true"></li>
+            <li class="progress-step" data-progress="2"><span>02</span><strong>Vos coordonnées</strong></li>
+          </ol>
+          <form id="reservation-form" data-reservation-form novalidate>
+            <input type="text" name="website" class="bot-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <fieldset class="booking-step" data-booking-step="1">
+              <legend><span class="booking-legend-number">01</span> Votre moment</legend>
+              <p class="fieldset-intro">Les créneaux proposés sont indicatifs. Nous confirmerons la disponibilité par e-mail.</p>
+              <div class="field-grid">
+                <label class="field"><span>Date souhaitée <b aria-hidden="true">*</b></span><input type="date" name="date" id="booking-date" aria-describedby="booking-date-help" required><small class="field-hint" id="booking-date-help">Ouvert <span data-opening-days>du mardi au samedi</span> · <span data-closed-days>dimanche et lundi fermés</span></small></label>
+                <label class="field"><span>Service <b aria-hidden="true">*</b></span><select name="service" id="booking-service" required><option value="dinner">Dîner</option><option value="lunch">Déjeuner</option></select><small class="field-hint">Choisissez déjeuner ou dîner.</small></label>
+                <label class="field"><span>Horaire souhaité <b aria-hidden="true">*</b></span><select name="time" id="booking-time" required><option value="" disabled selected>Choisir un horaire</option><option value="19:15">19:15</option><option value="19:45">19:45</option><option value="20:15">20:15</option></select></label>
+                <label class="field"><span>Nombre de convives <b aria-hidden="true">*</b></span><select name="guests" id="booking-guests" required><option value="1">1 personne</option><option value="2" selected>2 personnes</option><option value="3">3 personnes</option><option value="4">4 personnes</option><option value="5">5 personnes</option><option value="6">6 personnes</option><option value="7">7 personnes</option><option value="8">8 personnes</option></select></label>
+                <label class="field field-wide"><span>Menu souhaité <b aria-hidden="true">*</b></span><select name="menu" id="booking-menu" required><option value="instant">L’Instant · 5 temps — 98 €</option><option value="traverse">La Traversée · 7 temps — 145 €</option><option value="motif">Le Motif · 9 temps — 185 €</option></select><small class="field-hint">Tarif indicatif par personne. <a href="menus.html">Découvrir les menus</a></small></label>
+                <label class="field field-wide"><span>Accord mets et boissons <small>(facultatif)</small></span><select name="pairing" id="booking-pairing"><option value="none" selected>Sans accord</option><option value="wine">Accord de vins · 4 verres — 68 € par personne</option><option value="alcoholFree">Accord sans alcool · 4 verres — 48 € par personne</option></select></label>
+              </div>
+              <div class="booking-inline-estimate"><div><span>Estimation pour <strong data-summary-guests-short>2 personnes</strong></span><small>Menu et accord · hors autres boissons</small></div><strong data-summary-price-total>196 €</strong></div>
+              <p class="form-feedback" data-date-feedback aria-live="polite"></p>
+              <div class="step-actions"><span>ÉTAPE 01 <i aria-hidden="true"></i> 02</span><button class="button button-metal" type="submit" data-reservation-next>Continuer <span aria-hidden="true">→</span></button></div>
+            </fieldset>
+            <fieldset class="booking-step" data-booking-step="2" hidden>
+              <legend><span class="booking-legend-number">02</span> Vos coordonnées</legend>
+              <p class="fieldset-intro">Nous utiliserons ces informations uniquement pour vous répondre au sujet de cette demande.</p>
+              <div class="field-grid">
+                <label class="field"><span>Prénom et nom <b aria-hidden="true">*</b></span><input type="text" name="name" autocomplete="name" required placeholder="Votre nom"></label>
+                <label class="field"><span>Adresse e-mail <b aria-hidden="true">*</b></span><input type="email" name="email" autocomplete="email" required placeholder="vous@exemple.fr"></label>
+                <label class="field"><span>Téléphone <small>(facultatif)</small></span><input type="tel" name="phone" autocomplete="tel" placeholder="06 00 00 00 00"></label>
+                <label class="field field-wide"><span>Allergies ou préférences alimentaires <small>(facultatif)</small></span><textarea name="dietary" rows="3" placeholder="Indiquez les informations utiles à notre équipe de cuisine"></textarea></label>
+                <label class="field field-wide"><span>Un mot pour la maison <small>(facultatif)</small></span><textarea name="note" rows="3" placeholder="Une occasion particulière, une question…"></textarea></label>
+              </div>
+              <label class="consent-check"><input type="checkbox" name="privacy" required><span>J’accepte que mes informations soient utilisées pour traiter ma demande. <a href="mentions-legales.html#confidentialite">Confidentialité</a>.</span></label>
+              <div class="step-actions step-actions-back"><button class="text-button" type="button" data-reservation-back>← Modifier ma demande</button><button class="button button-metal" type="submit" data-reservation-send>Envoyer ma demande <span aria-hidden="true">↗</span></button></div>
+              <p class="form-feedback" data-submit-feedback aria-live="polite"></p>
+            </fieldset>
+          </form>
+          <p class="booking-disclaimer"><span aria-hidden="true">✳</span><span>Votre demande sera enregistrée et transmise à la maison. La table n’est confirmée qu’après validation explicite par l’équipe.</span></p>
+        </div>
+        <aside class="booking-aside" aria-label="Récapitulatif de votre demande">
+          <div class="booking-card">
+            <div class="booking-card-heading"><span>VOTRE DEMANDE</span><span>EN BREF</span></div>
+            <div class="booking-card-menu" aria-live="polite" aria-atomic="true"><span>MENU</span><strong data-summary-menu>L’Instant</strong><small data-summary-steps>5 temps · 98 € / personne</small><small data-summary-pairing>Sans accord</small></div>
+            <div class="booking-card-detail" aria-live="polite" aria-atomic="true">
+              <div><span>Service</span><strong data-summary-service>Dîner</strong></div>
+              <div><span>Date</span><strong data-summary-date>À choisir</strong></div>
+              <div><span>Horaire</span><strong data-summary-time>À choisir</strong></div>
+              <div><span>Convives</span><strong data-summary-guests>2 personnes</strong></div>
+            </div>
+            <div class="booking-card-price" aria-live="polite" aria-atomic="true">
+              <div><span>Estimation par personne</span><strong data-summary-price-person>98 €</strong></div>
+              <div><span>Pour <span data-summary-guests-short>2 personnes</span></span><strong data-summary-price-total>196 €</strong></div>
+              <small>Tarifs de démonstration · hors autres boissons.</small>
+            </div>
+            <div class="booking-card-foot"><span>LA MAISON</span><strong><span data-address>8 passage des Carmes</span><br><span data-city-line>33000 Bordeaux</span></strong><a data-map-link href="https://maps.google.com/?q=Bordeaux" target="_blank" rel="noreferrer">Voir l’itinéraire <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="booking-contact"><span>UNE QUESTION ?</span><p>Une demande particulière ou plus de huit convives ? Parlons-en directement.</p><a class="booking-phone" data-phone-link href="tel:+33500000000">Appeler le <span data-phone>05 00 00 00 00</span></a><a data-email-link href="mailto:bonjour@motif.example">bonjour@motif.example</a><small>Coordonnées de démonstration à personnaliser.</small></div>
+        </aside>
+      </div>
+    </section>
+    <section class="faq-section reservation-faq" aria-labelledby="reservation-faq-title">
+      <div class="container faq-layout">
+        <div class="reservation-faq-intro">
+          <div class="section-index"><span>03</span><span>AVANT DE CONFIRMER</span></div>
+          <h2 id="reservation-faq-title">Quelques<br><em>repères.</em></h2>
+          <p>Un doute avant d’envoyer votre demande ? Retrouvez ici les informations utiles.</p>
+          <a class="under-link" href="menus.html">Découvrir les menus <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Ma demande confirme-t-elle la réservation ?</summary>
+            <p>Votre demande est enregistrée et reste en attente tant que l’équipe n’a pas vérifié les disponibilités. La maison confirme ensuite la table depuis son espace de gestion. Un e-mail de confirmation est envoyé si la messagerie SMTP est configurée.</p>
+          </details>
+          <details>
+            <summary>Que comprend l’estimation affichée ?</summary>
+            <p>Elle additionne le menu et l’accord choisi, puis multiplie ce montant par le nombre de convives. Les autres boissons ne sont pas incluses. Les tarifs présentés sont des exemples à personnaliser.</p>
+          </details>
+          <details>
+            <summary>Où préciser une allergie ou une intolérance ?</summary>
+            <p>Ajoutez les informations utiles à la deuxième étape. Pour vérifier une adaptation ou poser une question particulière, contactez la maison avant votre venue.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-top"><div class="footer-signature"><a class="brand brand-footer" href="index.html"><span class="brand-seal" aria-hidden="true">M</span><span class="brand-name"><strong data-brand>Motif</strong><small data-descriptor>Table de création</small></span></a><p>Une cuisine de saison.<br>Un souvenir qui demeure.</p></div><div class="footer-block"><span class="footer-label">LA MAISON</span><address><span data-address>8 passage des Carmes</span><br><span data-city-line>33000 Bordeaux</span></address><a class="footer-arrow" data-map-link href="https://maps.google.com/?q=Bordeaux" target="_blank" rel="noreferrer">Nous trouver <span aria-hidden="true">↗</span></a></div><div class="footer-block"><span class="footer-label">LES SERVICES</span><p><span data-opening-days>Du mardi au samedi</span><br>Déjeuner · <span data-lunch-hours>12h15 — 13h30</span><br>Dîner · <span data-dinner-hours>19h15 — 20h30</span></p><a class="footer-arrow" href="menus.html">Voir les menus <span aria-hidden="true">↗</span></a></div><div class="footer-block"><span class="footer-label">ÉCRIVEZ-NOUS</span><a class="footer-contact" data-phone-link href="tel:+33500000000" data-phone>05 00 00 00 00</a><a class="footer-contact" data-email-link href="mailto:bonjour@motif.example">bonjour@motif.example</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> <span data-brand>Motif</span></span><span>La table se raconte au présent.</span><div><a href="mentions-legales.html">Mentions légales</a><span>·</span><a href="mentions-legales.html#confidentialite">Confidentialité</a></div></div></footer>
+  <a class="mobile-reserve" href="reservation.html">Réserver une table <span aria-hidden="true">↗</span></a>
+</body>
+</html>

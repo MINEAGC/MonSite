@@ -1,0 +1,15 @@
+{
+  "name": "motif-restaurant-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "^10.3.1"
+  }
+}
